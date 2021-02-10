@@ -1,0 +1,198 @@
+:root {
+  --color-font: rgba(0, 0, 0, 0.815);
+  --border-style: solid black 2px;
+  --shadow-box: 0px 3px 1px rgba(0, 0, 0, 0.884);
+  --color-theme: rgb(241, 202, 238);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+  height: 705px;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  border: solid 4px var(--color-theme);
+  margin: auto;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  color: var(--color-font);
+}
+
+h5 {
+  font-weight: 300;
+}
+
+nav {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+}
+
+nav button {
+  position: absolute;
+  color: var(--color-font);
+  left: 0;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  height: 30px;
+}
+
+nav div {
+  text-align: center;
+}
+
+header {
+  display: flex;
+  margin-top: 10px;
+}
+
+.playing-img {
+  display: block;
+  width: 110pt;
+  height: 110px;
+  background-image: url(img/1.png);
+  background-position: center;
+  background-size: cover;
+  border: var(--border-style);
+  margin: 0px;
+  border-radius: 10px;
+}
+
+.playing-singer {
+  display: flex;
+  flex-direction: column;
+  height: 110px;
+  justify-content: space-around;
+  margin-left: 15px;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+  margin: 25px 0px;
+}
+
+form button:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 145px;
+  height: 50px;
+  border: var(--border-style);
+  outline: none;
+  border-radius: 10px;
+  box-shadow: var(--shadow-box);
+}
+
+#playIcon {
+  margin-right: 5px;
+  color: var(--color-font);
+}
+
+form button:nth-child(2),
+form button:last-child {
+  width: 50px;
+  height: 50px;
+  color: var(--color-font);
+  border: var(--border-style);
+  outline: none;
+  border-radius: 25px;
+  box-shadow: var(--shadow-box);
+}
+
+ul {
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  overflow-y: scroll;
+}
+
+.listSong {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  height: 50px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+.listSong-Img {
+  width: 50px;
+  height: 50px;
+  border: var(--border-style);
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-position: center;
+  background-size: cover;
+}
+
+.listSong-singer {
+  height: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+/* song img */
+.tomato {
+  background-image: url(img/lullaby.png);
+}
+
+.violet {
+  background-image: url(img/yeonja.png);
+}
+
+.blue {
+  background-image: url(img/seeyou.png);
+}
+
+.darkcyan {
+  background-image: url(img/gaga.png);
+}
+
+/* animation */
+button:active {
+  transform: scale(0.97);
+  background-color: var(--color-theme);
+}
+
+.listSong:hover {
+  background-color: var(--color-theme);
+}
+
+/* img background-color */
+/* .img-tomato {
+  background-color: tomato;
+}
+
+.img-violet {
+  background-color: violet;
+}
+
+.img-blue {
+  background-color: blue;
+}
+
+.img-darkcyan {
+  background-color: darkcyan;
+} */

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Station</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/selected.css">
+</head>
+<body>
+    <section>
+        <nav class="nav-bar">
+            <a class="navbar-backward" href="index.html"><i class="fas fa-arrow-left"></i></a>
+            <i class="fas fa-ellipsis-v"></i>
+        </nav>
+
+        <div class = "selected__song-cover">
+            <img src="img/cover.png" style="width: 170px; height: 170px;">
+        </div>
+
+        <div class = "selected__song-singer">
+            <h3>You And I</h3>
+            <h6>Lady Gaga</h6>
+        </div>
+
+        <div class = "selected__song-range">
+            <div class="range-timeofsong">
+                <div class="timeofsong">1:56</div>
+                <div class="timeofsong">2:21</div>
+            </div>
+            <form>
+                <input id="timebar" type="range">
+            </form>
+        </div>
+
+        <div class = "selected__song-playBtn">
+            <i class="fas fa-redo-alt fa-sm" style="color: lightgray;"></i>
+            <i class="fas fa-step-backward fa-lg"></i>
+            <div class="song-playBtn">
+                <i class="fas fa-play"></i>
+            </div>
+            <i class="fas fa-step-forward fa-lg"></i>
+            <i class="fas fa-random fa-sm" style="color: lightgray;"></i>
+        </div>
+    </section>
+</body>
+</html>

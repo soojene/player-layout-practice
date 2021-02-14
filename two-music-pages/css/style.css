@@ -1,0 +1,70 @@
+:root {
+  --color-font: rgb(20, 20, 20);
+  --color-lightfont: rgba(163, 160, 160, 0.651);
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: var(--color-font);
+  /* align-items: center; */
+}
+
+h3 {
+  font-weight: bolder;
+}
+
+h5 {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+h6 {
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--color-lightfont);
+}
+
+button {
+  cursor: pointer;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 280px;
+  height: 500px;
+  border-radius: 30px;
+  padding: 30px 20px 10px 20px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.11);
+  /* option */
+  margin-top: 10%;
+}
+
+.nav-bar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--color-font);
+  margin-bottom: 10px;
+  /* background-color: thistle; */
+}
+
+.nav-bar {
+  cursor: pointer;
+}
+.nav-bar i:active {
+  transform: scale(0.95);
+  color: lightgray;
+}
+
+button:active {
+  transform: scale(0.95);
+}
